@@ -184,8 +184,15 @@
         .contact-icons {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 25px;
             margin-top: 30px;
+            width: 100%;
+        }
+        
+        .icons-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
             width: 100%;
         }
         
@@ -193,7 +200,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 100%;
         }
         
         .icon-btn {
@@ -364,7 +370,11 @@
             }
             
             .contact-icons {
-                gap: 18px;
+                gap: 20px;
+            }
+            
+            .icons-row {
+                gap: 35px;
             }
             
             .footer {
@@ -403,7 +413,11 @@
             }
             
             .contact-icons {
-                gap: 15px;
+                gap: 18px;
+            }
+            
+            .icons-row {
+                gap: 30px;
             }
             
             .footer {
@@ -430,6 +444,10 @@
             
             .title {
                 font-size: 20px;
+            }
+            
+            .icons-row {
+                gap: 50px;
             }
             
             .footer {
@@ -471,25 +489,36 @@
             <h2 class="title">Graphic Designer</h2>
             
             <div class="contact-icons">
-                <div class="icon-container">
-                    <button class="icon-btn" onclick="window.open('https://wa.me/966542377989')">
-                        <i class="fab fa-whatsapp"></i>
-                    </button>
-                    <div class="icon-label">WhatsApp</div>
+                <div class="icons-row">
+                    <div class="icon-container">
+                        <button class="icon-btn" onclick="window.open('https://wa.me/966542377989')">
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                        <div class="icon-label">WhatsApp</div>
+                    </div>
+                    
+                    <div class="icon-container">
+                        <button class="icon-btn" onclick="window.open('https://www.instagram.com/el6i.a?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==')">
+                            <i class="fab fa-instagram"></i>
+                        </button>
+                        <div class="icon-label">Instagram</div>
+                    </div>
                 </div>
                 
-                <div class="icon-container">
-                    <button class="icon-btn" onclick="window.open('https://www.instagram.com/el6i.a?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==')">
-                        <i class="fab fa-instagram"></i>
-                    </button>
-                    <div class="icon-label">Instagram</div>
-                </div>
-                
-                <div class="icon-container">
-                    <button class="icon-btn" onclick="window.open('https://www.linkedin.com/in/elia-marwan-9b590433a/')">
-                        <i class="fab fa-linkedin"></i>
-                    </button>
-                    <div class="icon-label">LinkedIn</div>
+                <div class="icons-row">
+                    <div class="icon-container">
+                        <button class="icon-btn" onclick="window.open('https://www.linkedin.com/in/elia-marwan-9b590433a/')">
+                            <i class="fab fa-linkedin"></i>
+                        </button>
+                        <div class="icon-label">LinkedIn</div>
+                    </div>
+                    
+                    <div class="icon-container">
+                        <button class="icon-btn" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=lmdmoon77@gmail.com&su=Contact from Website&body=Hello Elia,')">
+                            <i class="fas fa-envelope"></i>
+                        </button>
+                        <div class="icon-label">Email</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -536,7 +565,7 @@
                     button.style.transition = 'all 0.5s ease';
                     button.style.opacity = '1';
                     button.style.transform = 'translateY(0)';
-                }, 300 + (index * 150));
+                }, 300 + (index * 100));
             });
         });
 
